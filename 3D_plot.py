@@ -14,7 +14,7 @@ from matplotlib import cm
 from mpl_toolkits.mplot3d import Axes3D
 
 
-with open('gasmap.item') as ItemFile:
+with open('gasmap.txt') as ItemFile:
     data = list(map(str, ItemFile))
 
 data[:] = [line.rstrip('\n ') for line in data]
